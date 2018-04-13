@@ -1,129 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BioDB</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Pen Script" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="prelaoder">
-        <div class="spinner">
-            <div class="spinner-inner"></div>
+
+<!--                                       navbar                                 -->
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="brand-logo">
+        <img class="logo-img" src="" alt="">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <a href="login.html" class="waves-effect waves-light btn yellow darken-2 grey-text text-darken-4 segment-track-login">LOG IN</a>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons" style="color:black">menu</i></a>
+    </div>
+  </nav>  
+
+  <!--                                       navbar                                 -->
+  
+  <!--                           main page                                 -->
+
+    <section id="splash-blue" class="z-depth-1">
+        <div id="particles-js">
+            <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="884" height="480"></canvas>
+        </div>        
+        <div class="container">
+          <div class="row hero-home">
+            <div class="col m10 offset-m1 s12 l10 offset-l1">
+              <h1 class="white-text main-title">BIO DB</h1>
+              <h5 class="white-text sub-title">Website of the biological software</h5>  
+              <div class="row">
+                <div class="col offset-m4 m4">
+                  <a href="login.html" class="btn btn-large full-width waves-effect waves-light yellow darken-2 segment-track-start"><span class="black-text" style="font-weight:600;">SIGN UP</span></a>
+                </div>
+              </div>      
+          </div>
+        </div>
+      </div>
+    </section>           
+ <!--                           main page                                 -->
+
+<div class="interlude" id="customer-logos">
+  <div class="container hide-on-small-only">
+    <div class="row center-align no-margin">
+      <div class="col s6 m2 image-hover img-shadow-1">
+        <a class="modal-trigger" href="#modal1">
+        <h1>DNA</h1>
+      </a>
+      </div>
+      <div class="col s6 m2 image-hover img-shadow-1">
+        <a class="modal-trigger" href="#modal2">
+            <h1>RNA</h1>
+          </a>
+
+      </div>
+      <div class="col s6 m2 image-hover img-shadow-1">
+          <a class="modal-trigger" href="#modal3">
+        <h1>PROTEINS</h1>
+        </a>
+      </div>
+      <div class="col s6 m2 image-hover img-shadow-1">
+          <a class="modal-trigger" href="#modal4">
+        <H1>PHYLOGENY</H1>
+        </a>
+      </div>
+      <div class="col s6 m2 image-hover img-shadow-1">
+          <a class="modal-trigger" href="#modal5">
+        <H1>EMPTY</H1>
+        </a>
+      </div> 
+      <div class="col s6 m2 image-hover img-shadow-1">
+          <a class="modal-trigger" href="#modal6">
+        <h1>EMPTY</h1>
+        </a>
+      </div> 
+    </div>
+</div>
+  <div class="container hide-on-med-and-up">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">             
+        <div class="carousel">
+          <a class="carousel-item" href="#one!"><img src="image/logo_box_bn.png"></a>
+          <a class="carousel-item" href="#two!"><img src="image/logo_box_bn.png"></a>
+          <a class="carousel-item" href="#three!"><img src="image/logo_box_bn.png"></a>
+          <a class="carousel-item" href="#four!"><img src="image/logo_box_bn.png"></a>
+          <a class="carousel-item" href="#five!"><img src="image/logo_box_bn.png"></a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class='container p-y-md'>
+  <div class='control fixed'>
+    <div class='btn-material yellow darken-2'></div>
+    <i class='material-icons icon-material-search'>search</i>
+  </div>
+</div>
+<i class='icon-close material-icons'>close</i>
+<div class='search-Input'>
+  <input id='input-search' placeholder='Software Name' type='text'>
+</div>
+
+
+<div id="modal2" class="modal">
+    <div class="modal-content row">
+        <div class="col s4">
+        <ul>
+            <li><a href="#" class="waves-effect waves-yellow  btn-flat">Secondary structure</a></li>
+            <li><a href="#" class="waves-effect waves-yellow  btn-flat">Non coding RNA</a></li>
+              <li><a href="#" class="waves-effect waves-yellow  btn-flat">mRNA</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Transcription</a></li>
+              </ul>
+        </div>
+        <div class="col s4">
+            <ul>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Translation</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">RNA editing</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Mutation</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">cDNA</a></li>
+              </ul>
+        </div>
+        <div class="col s4">
+            <ul>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Biophysical properties</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Simulations</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Motif</a></li>
+              </ul>
         </div>
     </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat">close</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Homepage -->
-    <div class="container-fluid">
-        <div class="mainpage">
-            <div class="boxCenter text-center">
-                <div class="png">
-                    <img width="100" src="https://lh3.googleusercontent.com/_1_QXgKvMyOa2O4MyK6yQHJIwjuINTpSc5JfJsENQ-4k2JcyNID5jTfxBVTemE8Qc9tfDEg0gQlRKGlEyCZDEnJLA-vS9ZI4VMc1XNEKcg7nffj8HdyVrfWmsLBbS4raLfAMjjNjZ4HLY1EraN44DwF7kBBnDnS0Ui1JV9p0ntYuQyjimRaNOqV8UwFv0tqRklA1hqVw12EdDADyrB4okuVtPDQAMyedlyNq5mrX3r5TjetVeWho4lI3YKYKhtYrK2AmLSi7Za3zoo7wN3bb37g23SpFfg_zD_-3H3yVm5m9qJUTismLLWKf7mbY6p_tAEXKuJdWmfsEv6koBGAWBXyHJVvd27c80QWoBbnGfAFLxGHwScPWTzvTqR2guujUQpT8RotFABHhuyRf4z3rzgeYe7ksHHh-WIYMzuov2ADAwFaBAGpahiWaGaBNPAcAcAwrC6t6UJ1b-j_pQyHzd2hOax7nJbpKZaHqpi22owEYXxzQjE8SsZfVld7l3z9h6_qW88vi5xnbQiA22OJRSA8e5zmwKGDSQBjxd_-64Wlp4QO-3i87SOUu-WvNmJ81hWJDxdo3n43VscUkhTPs-JvIjdgvDCp6EMBWPQo=s1000-no">
-                </div>
-                <h1 class="text-center">
-                    <!-- Search Bar begins -->
-                        Search
-                    <!-- Search Bar ends -->
-                    <hr>
-                </h1>
+  <div id="modal1" class="modal">
+      <div class="modal-content row">
+          <div class="col s4">
+          <ul>
+              <li><a href="software.html" class="waves-effect waves-yellow  btn-flat">Restriction Enzyme</a></li>
+              <li><a href="#" class="waves-effect waves-yellow  btn-flat">Modification</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Sequencing</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Packaging</a></li>
+                </ul>
+          </div>
+          <div class="col s4">
+              <ul>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">SNP</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Marker</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Mutation</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Plasmid</a></li>
+                </ul>
+          </div>
+          <div class="col s4">
+              <ul>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Promoter</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Motif</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Transcriptional factor</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">DNA Packaging</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">Biophysical properties</a></li>
+                </ul>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat">close</a>
+        </div>
+      </div>
+    </div>
 
-                <!-- Slide down categories begins -->
-                <div class="side-nav-categories">
-                    <div class="title">
-                        <strong>Category</strong>
-                    </div>
-                    <ul id="category-tabs">
-                        <li>
-                            <a href="javascript:void" class="main-category"> Web Applications
-                                <i class="fa fa-minus"></i>
-                            </a>
-                            <ul class="sub-category-tabs">
-                                <li>
-                                    <a href="javascript:void">HTML</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void">SCSS</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul id="category-tabs">
-                        <li>
-                            <a href="javascript:void" class="main-category">Script
-                                <i class="fa fa-minus"></i>
-                            </a>
-                            <ul class="sub-category-tabs">
-                                <li>
-                                    <a href="javascript:void">Javascript</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void">jQuery</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void">Angular JS</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul id="category-tabs">
-                        <li>
-                            <a href="javascript:void" class="main-category">Server Script
-                                <i class="fa fa-minus"></i>
-                            </a>
-                            <ul class="sub-category-tabs">
-                                <li>
-                                    <a href="javascript:void">C#</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void">PHP</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void">ASP.Net</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Slide down categories end -->
-
-                <!-- <button class="main-button btn cat1-btn">
-                    Category 1
-                </button>
-                <button class="main-button btn cat2-btn">
-                    Category 2
-                </button>
-                <button class="main-button btn cat3-btn">
-                    Category 3
-                </button>
-                <button class="main-button btn cat4-btn">
-                    Category 4
-                </button>
-                <button class="main-button btn cat5-btn">
-                    Category 5
-                </button>
-                <button class="main-button btn cat6-btn">
-                    Category 6
-                </button> -->
+    <div id="modal3" class="modal">
+        <div class="modal-content row">
+            <div class="col s4">
+            <ul>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Motif</a></li>
+                <li><a href="#" class="waves-effect waves-yellow  btn-flat">Domain</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat"> Secondary Structure</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Tertiary structure</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Biophysical properties</a></li>
+            </div>
+            <div class="col s4">
+                <ul>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Co-factors</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Evolution</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Disorders</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Localization</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Active Site</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat"> Functions</a></li>                  
+                  </ul>
+            </div>
+            <div class="col s4">
+                <ul>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Binding sites</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Post translation modification</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Protein DNA Binding</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Protein RNA Binding</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Network</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat">Packaging</a></li>
+                  </ul>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-</body>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat">close</a>
+          </div>
+        </div>
+      </div>
 
+      <div id="modal4" class="modal">
+          <div class="modal-content row">
+              <div class="col s4">
+              <ul>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">DNA</a></li>
+                  <li><a href="#" class="waves-effect waves-yellow  btn-flat">RNA</a></li>
+                    <li><a href="#" class="waves-effect waves-yellow  btn-flat"> Protein</a></li>
+              </div>
+              <div class="col s4">
+                  <ul>
+                      <li><a href="#" class="waves-effect waves-yellow  btn-flat">Neighbour joining</a></li>
+                      <li><a href="#" class="waves-effect waves-yellow  btn-flat">Maximum likelihood</a></li>
+                      <li><a href="#" class="waves-effect waves-yellow  btn-flat">Parsimony</a></li>                  
+                    </ul>
+              </div>
+              <div class="col s4">
+                  <ul>
+                      <li><a href="#" class="waves-effect waves-yellow  btn-flat">Alignment</a></li>
+                      <li><a href="#" class="waves-effect waves-yellow  btn-flat">Diversity</a></li>
+                    </ul>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat">close</a>
+            </div>
+          </div>
+        </div>
+
+<!---  script  -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script/particle.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+<script src="script/main.js"></script>
+</body>
 </html>

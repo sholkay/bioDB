@@ -1,0 +1,271 @@
+/* ---- reset ---- */
+  canvas {
+    display: inline-block;
+    vertical-align: baseline;;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: radial-gradient(circle farthest-side at right bottom,#414b82 34%,#272d4e 100%);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+  }
+  
+  section div#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  #splash-blue {
+    background-color: #272D4E;
+    background-image: radial-gradient(circle farthest-side at right bottom,#414b82 34%,#272d4e 100%);
+}
+
+#splash-blue .hero-home {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 85%;
+}
+
+#splash-blue .main-title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+#splash-blue .main-title {
+  margin-top: 0;
+  line-height: inherit;
+  font-weight: 400;
+  text-align: center;
+}
+
+#splash-blue .sub-title {
+  text-align: center;
+}
+
+#splash-blue .btn, #splash-blue .btn-large {
+    margin-top: 25px;
+    padding: 0 1em;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px)
+{
+  .row .col.m2{
+    width: 15.6666666667%;
+  }
+}
+
+nav .brand-logo img {
+  margin-top: 15px;
+  max-height: 34px;
+}
+
+section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#customer-logos {
+  background-color: #eee;
+  z-index: 1;
+  padding: .7rem;
+}
+#customer-logos .row {
+  display: flex;
+  align-items: center;
+}
+
+.interlude {
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+#customer-logos img {
+  width: 120px;
+}
+
+.fixedbutton {
+  position: fixed; 
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #2d2d2d;
+  letter-spacing: 0.2px;
+  /* Search Active */
+}
+body.search-active {
+  overflow: hidden;
+}
+body.search-active .search-Input {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+body.search-active .icon-close {
+  opacity: 1;
+  transform: rotate(-90deg);
+}
+body.search-active .control {
+  cursor: default;
+}
+body.search-active .control .btn-material {
+  transform: scale(70);
+}
+body.search-active .control .icon-material-search {
+  opacity: 0;
+}
+
+/* Close Icon */
+.icon-close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 70px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.icon-close:hover {
+  transform: rotate(0);
+}
+
+/* Search Input */
+.search-Input {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  position: fixed;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out;
+}
+.search-Input #input-search {
+  color: #fff;
+  font-size: 54px;
+  border: none;
+  height: 5rem;
+  background: transparent;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: 700;
+}
+
+.modal-content{
+  text-align: justify;
+}
+
+.modal-trigger>h1{
+    font-size: 1.2rem;
+    line-height: 100%;
+    margin: 2.8rem 0 1.68rem 0;
+    font-weight: 700;
+    color: black;
+}
+
+/* Control btn */
+.control {
+  cursor: pointer;
+}
+.control .btn-material {
+  position: absolute;
+  top: -30px;
+  width: 60px;
+  height: 60px;
+  right: 60px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  background: #e91e63;
+  outline: 0;
+  transform-origin: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.control .btn-material:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.control .icon-material-search {
+  color: #FFF;
+  position: absolute;
+  top: -10px;
+  right: 78px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+/* Typo */
+h1,
+h2 {
+  font-weight: 300;
+}
+
+
+
+
+.image-hover * {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+.image-hover {position:relative;width:450px;height:100px;display:inline-block;overflow:hidden;background:#fbc02d;border:5px solid #eee;
+box-shadow:0px 2px 3px rgba(0, 0, 0, 0.3);-moz-box-shadow:0px 2px 3px rgba(0, 0, 0, 0.3);-webkit-box-shadow:0px 2px 3px rgba(0, 0, 0, 0.3)}
+.image-hover a {text-decoration:none}
+
+
+
+
+
+/*** effect - shadow 1 ***/
+
+
+.img-shadow-1
+{
+-webkit-box-shadow: 0 28px 16px -26px black;
+-moz-box-shadow: 0 28px 16px -26px black;
+box-shadow: 0 28px 16px -26px black;
+}
+
+.img-shadow-1:hover
+{
+transform:scaleX(1.3);
+-webkit-transform:scaleX(1.3);
+-moz-transform:scaleX(1.3); 
+-ms-transform:scaleX(1.3);
+-o-transform:scaleX(1.3);
+
+-webkit-box-shadow: 0 58px 36px -56px black;
+-moz-box-shadow: 0 58px 36px -56px black;
+box-shadow: 0 58px 36px -40px black;
+}
+
+.img-shadow-1
+{
+transition:all .6s ease-in-out;
+-webkit-transition:all .6s ease-in-out;
+-moz-transition:all .6s ease-in-out;
+-ms-transition:all .6s ease-in-out;
+-o-transition:all .6s ease-in-out;
+}
+
+
